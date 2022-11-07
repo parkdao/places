@@ -10,10 +10,12 @@
   onMount(async () => {
     let s = Mesh.initScene();
     const layers: string[][] = [
-      ["grassrock"],
-      ["fullHex", "grassrock", "sonoran", "snowrock", "fullHex", "sandtile"],
+      ["tile5"],
+      ["tile1", "tile2", "tile3", "tile4", "tile5", "tile5"],
     ];
-    await w.init(layers, 5.65);
+
+    // controls tiles spacing. this gets them almost touching grass
+    await w.init(layers, 5.45);
 
     podling.init("podling", new Mesh.Input(s, { isMobile: false }));
 

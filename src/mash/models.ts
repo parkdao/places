@@ -51,7 +51,13 @@ export type Kinds =
   | "sandtile"
   | "grassrock"
   | "snowrock"
-  | "sonoran";
+  | "sonoran"
+  | "tile1"
+  | "tile2"
+  | "tile3"
+  | "tile4"
+  | "tile5"
+;
 
 export const modelz: { [k: string]: ModelConfig } = {
   fullHex: {
@@ -261,6 +267,47 @@ export const modelz: { [k: string]: ModelConfig } = {
     path: pre + "biome-conForest/",
     file: "conForest-fern.glb",
     scale: 0.04,
+    shadow: true,
+  },
+
+  // new tiles
+  tile1: {
+    path: "/models/tiles/",
+    file: "tile1.glb",
+    scale: 0.2,
+    rotate: Math.PI / 6,
+    shadow: true,
+  },
+
+  tile2: {
+    path: "/models/tiles/",
+    file: "tile2.glb",
+    scale: 0.2,
+    rotate: Math.PI / 6,
+    shadow: true,
+  },
+
+  tile3: {
+    path: "/models/tiles/",
+    file: "tile3.glb",
+    scale: 0.2,
+    rotate: Math.PI / 6,
+    shadow: true,
+  },
+
+  tile4: {
+    path: "/models/tiles/",
+    file: "tile4.glb",
+    scale: 0.2,
+    rotate: Math.PI / 6,
+    shadow: true,
+  },
+
+  tile5: {
+    path: "/models/tiles/",
+    file: "tile5.glb",
+    scale: 0.2,
+    rotate: Math.PI / 6,
     shadow: true,
   },
 };
